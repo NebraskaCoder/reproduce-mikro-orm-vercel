@@ -24,7 +24,7 @@ const config: Options<PostgreSqlDriver> = {
   },
   debug: process.env.DEBUG === "true" || process.env.DEBUG?.includes("db"),
   entities: [Task],
-  allowGlobalContext: true,
+  allowGlobalContext: false,
 };
 
 export default config;
